@@ -4,7 +4,7 @@ html{
 
 *, *::before, *::after{
     box-sizing: inherit;
-    outline: 2px solid red;
+    /* outline: 2px solid red; */
 }
 
 body{
@@ -17,7 +17,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
 }
 
 #weapon{
@@ -41,13 +41,32 @@ p{
 .choice{
     width: 240px;
     height: 240px;
+    border-radius: 50%;
+}
+
+.choice:hover{
+    background-color: gray;
+}
+
+.score{
+    margin-bottom: 0px; 
+}
+
+.scoreVs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.scoreVs p{
+    margin: 0px;
 }
 
 
 img{
-    width: 240px;
-    height: 240px;
+    width: 80px;
+    height: 80px;
     margin: 0;
     padding: 0;
+    -webkit-user-drag: none;
 }
 

@@ -7,6 +7,14 @@ html{
     /* outline: 2px solid red; */
 }
 
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+    justify-content: center;
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -17,7 +25,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 80vh;
+    height: 65vh;
 }
 
 #weapon{
@@ -55,11 +63,9 @@ p{
 .scoreVs{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
-.scoreVs p{
-    margin: 0px;
-}
+
 
 
 img{

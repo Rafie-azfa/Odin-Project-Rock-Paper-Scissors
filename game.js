@@ -41,15 +41,3 @@ function playRound(choiceHuman, choiceComputer) {
 function getWinner(humanScore, computerScore){
     return humanScore > computerScore ? console.log(`human wins with score: human ${humanScore} : computer ${computerScore}`) : computerScore > humanScore ? console.log(`human wins with score: human ${humanScore} : computer ${computerScore}`) : "Tie";
 }
-
-function playGame(game, n) {
-    for (i = 1; i <= n; i++) {
-        console.log(`Round: ${i}`)
-        game(getHumanChoice, getComputerChoice);
-    }
-
-    getWinner(humanScore, computerScore);
-
-}
-
-playGame(playRound, 5);
